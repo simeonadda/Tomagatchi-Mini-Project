@@ -1,2 +1,2 @@
-# Tomagatchi-Mini-Project
-Project 0: Tomagatchi Mini Project
+# Tomagotchi-Mini-Project
+Project 0: Tomagotchi Mini Project
