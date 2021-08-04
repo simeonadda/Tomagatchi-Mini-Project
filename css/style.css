@@ -1,0 +1,36 @@
+body {
+  background-image: url("https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/rm19-card-05-blendingspace.jpg?w=1200&h=1200&dpr=1&fit=clip&crop=default&fm=jpg&q=75&vib=3&con=3&usm=15&cs=srgb&bg=F4F4F3&ixlib=js-2.2.1&s=875751dfb8284d76b878668a10d77269");
+  font-family: 'Rock Salt', cursive;
+  color: snow;
+  background-size: cover;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  font-size: 1.5em
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+}
+
+button {
+  font-family: 'Rock Salt', cursive;
+}
+
+#game {
+  display: flex;
+  justify-content: center;
+  border: groove 1em snow;
+  border-radius: .25em;
+  /* width: 500px; */
+  height: 540px;
+}
+
+.enter-name {
+  display: flex;
+  justify-content: center;
+}
