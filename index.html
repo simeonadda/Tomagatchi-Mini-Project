@@ -5,35 +5,46 @@
     <title>Tomagotchi Game</title>
     <link rel="stylesheet" href="css/style.css">
     <style>
-@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
-</style>
+      @import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+    </style>
   </head>
   <body>
     <header>
       <h1>Tomagotchi World</h1>
     </header>
+
     <hr>
-    <nav>
-      <button type="button" name="button">Menu</button>
-      <button type="button" name="button">Game</button>
-      <button type="button" name="button">Feed</button>
-      <button type="button" name="button">Sleep</button>
-      <button type="button" name="button">Exercise</button>
+
+    <form id="form">
+      <input type="text" id="new-name" value="Enter here"/>
+      <input type="submit" id="char-name" value="Submit"/>
+    </form>
+
+    <div id="name">Name</div>
+
+    <nav id=game-buttons>
+      <button class="button" id="menu">Menu</button>
+      <button class="button" id="feed">Feed</button>
+      <button class="button" id="sleep">Sleep</button>
+      <button class="button" id="exercise">Exercise</button>
     </nav>
-    <hr>
-    <div id="title">
-      <!--menu bar  -->
-    </div>
 
-    <div class="enter-name">
-      <label for="name">Enter character name</label>
-      <input type="text" name="name" id="new-name" value="Sim">
-    </div>
+    <div id="gamebox">
 
-    <div id="game">
-      <img src="../../../Desktop/Tomagotchi Images/happy bot.jpg" alt="happy bot">
-    </div>
+      <div class="decor">
+        <img src="Tomagotchi Images/food group 1.jpg" class="left-decor">
+      </div>
 
+      <div id="game">
+        <img src="../../../Desktop/Tomagotchi Images/happy bot.jpg" class="game-image">
+      </div>
+
+      <div class="decor">
+        <img src="Tomagotchi Images/play group 1.jpg" class="right-decor">
+      </div>
+
+    </div>
 
     <hr>
     <footer></footer>
