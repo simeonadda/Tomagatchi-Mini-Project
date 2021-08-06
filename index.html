@@ -9,7 +9,7 @@
       @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
     </style>
   </head>
-  <body>
+  <body style="background-image: url('https://wallpaperaccess.com/full/4199031.jpg')",>
     <header>
       <h1>Tomagotchi World</h1>
     </header>
@@ -21,30 +21,39 @@
       <input type="submit" id="char-name" value="Submit"/>
     </form>
 
-    <div id="name">Name</div>
+    <h2 id="name"></h2>
+
+    <ul id="attributes">
+      <li id="age">Age</li>
+      <li id="hunger">Hunger</li>
+      <li id="sleepiness">Sleepiness</li>
+      <li id="boredom">Boredom</li>
+    </ul>
 
     <nav id=game-buttons>
-      <button class="button" id="menu">Menu</button>
-      <button class="button" id="feed">Feed</button>
+      <button class="button" id="play">Play</button>
+      <button class="button" id="eat">Eat</button>
       <button class="button" id="sleep">Sleep</button>
       <button class="button" id="exercise">Exercise</button>
     </nav>
 
     <div id="gamebox">
 
-      <div class="decor">
-        <img src="Tomagotchi Images/food group 1.jpg" class="left-decor">
+      <div class="left-side">
+        <img src="Tomagotchi Images/food group 1.jpg" class="left-pic">
       </div>
 
       <div id="game">
         <img src="Tomagotchi Images/happy bot.jpg" class="game-image">
       </div>
 
-      <div class="decor">
-        <img src="Tomagotchi Images/play group 1.jpg" class="right-decor">
+      <div class="right-side">
+        <img src="Tomagotchi Images/play group 1.jpg" class="right-pic">
       </div>
 
     </div>
+
+    <button type="button" name="button">Test me</button>
 
     <hr>
     <footer></footer>

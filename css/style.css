@@ -1,5 +1,4 @@
 body {
-  background-image: url("https://wallpaperaccess.com/full/4199031.jpg");
   font-family: 'Rock Salt', cursive;
   color: snow;
   background-size: cover;
@@ -20,28 +19,52 @@ header {
   font-size: 36px;
 }
 
-nav {
+#game-buttons {
   display: flex;
   justify-content: center;
   float: center;
   margin: 25px 0px 0px 0px;
+
+
+
+
+}
+
+#attributes {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 200px;
+  margin-right: 200px;
+  font-size: 24px;
+  list-style: none
 }
 
 button {
   font-family: 'Roboto', sans-serif;
+  font-size: 24px;
   border: outset .25em snow;
   border-radius: 4px;
   color: snow;
   background-color: rgb(51, 51, 51);
-  font-size: 24px;
+}
+
+button:hover {
+  background-color: grey;
+}
+
+button:active {
+  background-color: darkgrey;
+  transform: translateY(2px);
 }
 
 #gamebox {
   display: flex;
   justify-content: center;
   justify-content: space-between;
-  margin-left: 100px;
-  margin-right: 100px;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 #game {
@@ -55,7 +78,16 @@ button {
   height: 540px;
 }
 
-.decor {
+.left-side {
+  margin: 100px;
+  border: groove 1em snow;
+  border-radius: .25em;
+  height: 251px;
+  width: 250px;
+  transform: rotate(-20deg);
+}
+
+.right-side {
   margin: 100px;
   border: groove 1em snow;
   border-radius: .25em;
@@ -64,11 +96,11 @@ button {
   transform: rotate(20deg);
 }
 
-.left-decor {
+.left-pic {
   width: 250px;
 }
 
-.right-decor {
+.right-pic {
   width: 250px;
 }
 
