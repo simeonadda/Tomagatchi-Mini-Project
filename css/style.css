@@ -1,4 +1,5 @@
 body {
+  background-image: url('https://wallpaperaccess.com/full/4199031.jpg');
   font-family: 'Rock Salt', cursive;
   color: snow;
   background-size: cover;
@@ -24,15 +25,16 @@ header {
   justify-content: center;
   float: center;
   margin: 25px 0px 0px 0px;
+}
 
-
-
-
+.start-div {
+  display: flex;
+  justify-content: center;
 }
 
 #attributes {
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   flex-direction: row;
   justify-content: space-between;
   margin-left: 200px;
@@ -68,15 +70,26 @@ button:active {
 }
 
 #game {
+  background-color: rgb(51, 51, 51);
   border: groove 1em snow;
   border-radius: .25em;
+  padding: 20px 20px 20px 20px;
   height: 540px;
   margin: 20px
 }
 
 .game-image {
   height: 540px;
+  position: relative;
+  animation: mymove 1s infinite;
+  animation-direction: alternate;
 }
+
+@keyframes mymove {
+  from {top: -20px}
+  to {top: 20px}
+}
+
 
 .left-side {
   margin: 100px;

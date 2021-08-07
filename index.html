@@ -9,7 +9,7 @@
       @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
     </style>
   </head>
-  <body style="background-image: url('https://wallpaperaccess.com/full/4199031.jpg')",>
+  <body>
     <header>
       <h1>Tomagotchi World</h1>
     </header>
@@ -17,11 +17,15 @@
     <hr>
 
     <form id="form">
-      <input type="text" id="new-name" value="Enter here"/>
-      <input type="submit" id="char-name" value="Submit"/>
+      <input type="text" id="new-name" value="Enter pet name here"/>
+      <input type="submit" id="char-name" value="Submit" onclick="hideForm()"/>
     </form>
 
     <h2 id="name"></h2>
+
+    <div class="start-div">
+      <button type="button" id="start-button" style="display:none;">Start Game</button>
+    </div>
 
     <ul id="attributes">
       <li id="age">Age</li>
@@ -43,8 +47,8 @@
         <img src="Tomagotchi Images/food group 1.jpg" class="left-pic">
       </div>
 
-      <div id="game">
-        <img src="Tomagotchi Images/happy bot.jpg" class="game-image">
+      <div class=tommy id="game">
+        <img src="Tomagotchi Images/happy bot 2.jpg" class="game-image">
       </div>
 
       <div class="right-side">
@@ -52,8 +56,6 @@
       </div>
 
     </div>
-
-    <button type="button" name="button">Test me</button>
 
     <hr>
     <footer></footer>
