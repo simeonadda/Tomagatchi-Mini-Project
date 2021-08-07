@@ -34,11 +34,11 @@ class Tomagotchi {
       age.innerHTML = `Age: ${this.age}`
       age.style.color = "snow"
 
-      if (this.age >= 5) {
+      if (this.age >= 5 && this.age < 15) {
         gameImage.src = "Tomagotchi Images/happy bot 2.jpg"
       }
 
-      if (this.age >= 15) {
+      if (this.age >= 15 && this.age < 25) {
         gameImage.src = "Tomagotchi Images/transform bot 1.jpg"
       }
 
@@ -52,11 +52,10 @@ class Tomagotchi {
     let count = setInterval(() => {
       this.hunger++
       hunger.innerHTML = `Hunger: ${this.hunger}`
-      hunger.style.color = "snow"
 
       if (this.hunger > 5) {
         gameImage.src = "Tomagotchi Images/mad bot.jpg"
-        hunger.style.color = "firebrick"
+        hunger.style.color = "snow"
       }
 
       if (this.hunger > 5 && this.age >= 5) {
@@ -78,7 +77,7 @@ class Tomagotchi {
 
       if (this.sleepiness > 5) {
         gameImage.src = "Tomagotchi Images/sad bot.jpg"
-        sleepiness.style.color = "firebrick"
+        sleepiness.style.color = "snow"
       }
 
       if (this.sleepiness > 5 && this.age >= 5) {
@@ -96,11 +95,10 @@ class Tomagotchi {
     let count = setInterval(() => {
       this.boredom++
       boredom.innerHTML = `Boredom: ${this.boredom}`
-      boredom.style.color = "snow"
 
       if (this.boredom > 5) {
         gameImage.src = "Tomagotchi Images/dot dot dot bot.jpg"
-        boredom.style.color = "firebrick"
+        boredom.style.color = "snow"
       }
 
       if (this.boredom > 5 && this.age >= 5) {
@@ -125,21 +123,19 @@ class Tomagotchi {
     this.hunger = 0
     attributeStyle()
     gameImage.src = "Tomagotchi Images/food.jpg"
-    setTimeout(originalStyle, 2500)
+    setTimeout(originalStyle, 3000)
   }
   sleep() {
     this.sleepiness = 0
     attributeStyle()
     gameImage.src = "Tomagotchi Images/sleep sheep.jpg"
-    setTimeout(originalStyle, 2500)
+    setTimeout(originalStyle, 3000)
   }
   exercise() {
     this.boredom = 0
     attributeStyle()
     gameImage.src = "Tomagotchi Images/exercise kids.jpg"
-    setTimeout(originalStyle, 2500)
-  }
-  move() {
+    setTimeout(originalStyle, 3000)
   }
 }
 
@@ -156,7 +152,6 @@ function startGame() {
   pet.getHungry()
   pet.getSleepy()
   pet.getBored()
-  pet.move()
 }
 
 function endGame() {
@@ -165,6 +160,7 @@ function endGame() {
   gameImage.src = "Tomagotchi Images/death bot.jpg"
   attributes.style.display = 'none'
   gameButtons.style.display = 'none'
+  document.querySelector("h2").innerHTML= "Do you want to play again?"
   showRestart()
 }
 
@@ -178,7 +174,7 @@ function originalStyle() {
   gameImage.style.animation = "mymove 1s infinite alternate"
   gameBackground.style.backgroundColor = "rgb(51, 51, 51)"
 
-  if (this.age >= 5) {
+  if (this.age >= 5 && this.age < 15) {
     gameImage.src = "Tomagotchi Images/happy bot 2.jpg"
     gameBackground.style.backgroundColor = "rgb(51, 51, 51)"
   } else if (this.age >= 15) {
@@ -199,21 +195,23 @@ const exerciseButton = document.querySelector("#exercise")
 playButton.addEventListener('click', function() {
   pet.play()
   document.body.style.backgroundImage = "url('https://www.teahub.io/photos/full/299-2991621_laptop-wallpapers-79-hd-laptop-wallpapers-on-wallpaperplay.jpg')";
+  document.body.style.color = "snow";
 });
 
 eatButton.addEventListener('click', function() {
   pet.eat()
-  document.body.style.backgroundImage = "url('https://wallpapercave.com/wp/wp4375909.jpg')";
+  document.body.style.backgroundImage = "url('http://xdesktopwallpapers.com/wp-content/uploads/2011/11-1/Ready-To-Eat.jpg')";
 });
 
 sleepButton.addEventListener('click', function() {
   pet.sleep()
-  document.body.style.backgroundImage = "url('https://images.unsplash.com/photo-1475274047050-1d0c0975c63e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80')";
+  document.body.style.backgroundImage = "url('https://wallpaperaccess.com/full/2044030.jpg')";
+  document.body.style.color = "snow";
 });
 
 exerciseButton.addEventListener('click', function() {
   pet.exercise()
-  document.body.style.backgroundImage = "url('https://cdn.wallpapersafari.com/4/58/o2FaRs.jpg')";
+  document.body.style.backgroundImage = "url('https://coolwallpapers.me/picsup/3052480-barbell_black_body-builder_dumbbell_fitness-equipment_fitness-room_fitness-studio_muscle-training_power-sports_sport_strength-training_train_weight-plates_weights.jpg')"
 })
 
 
