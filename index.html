@@ -14,7 +14,7 @@
       <h1>Tomagotchi World</h1>
     </header>
 
-    <hr>
+    <hr style="color:lemonchiffon">
 
     <form id="form">
       <input type="text" id="new-name" value="Enter pet name here"/>
@@ -27,14 +27,18 @@
       <button type="button" id="start-button" style="display:none;">Start Game</button>
     </div>
 
-    <ul id="attributes">
+    <div class="refresh">
+      <button type="button" id="restart" onclick="window.location.reload();" style="display:none;">Restart Game</button>
+    </div>
+
+    <ul id="attributes" style="display:none;">
       <li id="age">Age</li>
       <li id="hunger">Hunger</li>
       <li id="sleepiness">Sleepiness</li>
       <li id="boredom">Boredom</li>
     </ul>
 
-    <nav id=game-buttons>
+    <nav id=game-buttons style="display:none;">
       <button class="button" id="play">Play</button>
       <button class="button" id="eat">Eat</button>
       <button class="button" id="sleep">Sleep</button>
@@ -42,22 +46,20 @@
     </nav>
 
     <div id="gamebox">
-
       <div class="left-side">
-        <img src="Tomagotchi Images/food group 1.jpg" class="left-pic">
+        <img src="Tomagotchi Images/38651011.jpg" class="left-pic">
       </div>
 
       <div class=tommy id="game">
-        <img src="Tomagotchi Images/happy bot 2.jpg" class="game-image">
+        <img src="Tomagotchi Images/happy bot.jpg" class="game-image">
       </div>
 
       <div class="right-side">
-        <img src="Tomagotchi Images/play group 1.jpg" class="right-pic">
+        <img src="Tomagotchi Images/surf guy.jpg" class="right-pic">
       </div>
 
     </div>
 
-    <hr>
     <footer></footer>
 
     <script type="text/javascript" src="js/app.js"></script>

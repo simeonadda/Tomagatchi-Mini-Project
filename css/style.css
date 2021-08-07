@@ -8,7 +8,7 @@ body {
 header {
   display: flex;
   justify-content: center;
-  font-size: 2.25em;
+  font-size: 2.5em;
   text-shadow: 0 0 5px black;
   margin-top: -50px;
   margin-bottom: -80px;
@@ -18,6 +18,7 @@ header {
   display: flex;
   justify-content: center;
   font-size: 36px;
+  margin-bottom: 5px;
 }
 
 #game-buttons {
@@ -30,22 +31,29 @@ header {
 .start-div {
   display: flex;
   justify-content: center;
+  margin-bottom: 30px;
+}
+
+.refresh {
+  display: flex;
+  justify-content: center;
 }
 
 #attributes {
   display: flex;
-  /* justify-content: center; */
+  justify-content: center;
   flex-direction: row;
   justify-content: space-between;
   margin-left: 200px;
   margin-right: 200px;
+  color: snow;
   font-size: 24px;
   list-style: none
 }
 
 button {
   font-family: 'Roboto', sans-serif;
-  font-size: 24px;
+  font-size: 30px;
   border: outset .25em snow;
   border-radius: 4px;
   color: snow;
@@ -64,14 +72,14 @@ button:active {
 #gamebox {
   display: flex;
   justify-content: center;
-  justify-content: space-between;
-  margin-left: 50px;
-  margin-right: 50px;
+  justify-content: space-around;
+  margin-left: 75px;
+  margin-right: 75px;
 }
 
 #game {
   background-color: rgb(51, 51, 51);
-  border: groove 1em snow;
+  border: groove 1em lemonchiffon;
   border-radius: .25em;
   padding: 20px 20px 20px 20px;
   height: 540px;
@@ -90,20 +98,23 @@ button:active {
   to {top: 20px}
 }
 
-
 .left-side {
+  background-color: rgb(38, 38, 38);
   margin: 100px;
-  border: groove 1em snow;
+  border: groove 1em lemonchiffon;
   border-radius: .25em;
+  padding: 10px 10px 10px 10px;
   height: 251px;
   width: 250px;
   transform: rotate(-20deg);
 }
 
 .right-side {
+  background-color: rgb(38, 38, 38);
   margin: 100px;
-  border: groove 1em snow;
+  border: groove 1em lemonchiffon;
   border-radius: .25em;
+  padding: 10px 10px 10px 10px;
   height: 251px;
   width: 250px;
   transform: rotate(20deg);
@@ -111,10 +122,26 @@ button:active {
 
 .left-pic {
   width: 250px;
+  position: relative;
+  animation: leftmove 0s infinite;
+  animation-direction: alternate;
+}
+
+@keyframes leftmove {
+  from {left: -10px}
+  to {left: 10px}
 }
 
 .right-pic {
   width: 250px;
+  position: relative;
+  animation: rightmove 0s infinite;
+  animation-direction: alternate;
+}
+
+@keyframes rightmove {
+  from {right: -10px}
+  to {right: 10px}
 }
 
 form {
@@ -128,6 +155,6 @@ input {
 }
 
 hr {
-  border: solid;
+  border: groove .5em lemonchiffon;
   margin-bottom: 30px;
 }
